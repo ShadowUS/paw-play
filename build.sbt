@@ -1,14 +1,10 @@
-name := """paw-play"""
+import play.Project._
 
-version := "1.0-SNAPSHOT"
+name := "zentask"
 
-lazy val root = (project in file(".")).enablePlugins(PlayJava)
+version := "1.0"
 
-scalaVersion := "2.11.1"
+libraryDependencies ++= Seq(javaJdbc, javaEbean)    
+ebeanEnabled := true 
 
-libraryDependencies ++= Seq(
-  javaJdbc,
-  javaEbean,
-  cache,
-  javaWs
-)
+playJavaSettings

@@ -2,7 +2,9 @@
 
 @main(projects, user){
     
+    
     <article  class="tasks">
+     
         @todoTasks.groupBy(_.project).map {
             case (project, tasks) => {
                 <div class="folder" data-folder-id="@project.id">

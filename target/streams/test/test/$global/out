@@ -1,0 +1,20 @@
+[0m[[0mdebug[0m] [0m[34mTest run started[0m[0m
+[0m[[0mdebug[0m] [0mTest test.[33mSimpleTest[0m.[36mrunInBrowser[0m started[0m
+[0m[[31merror[0m] [0mTest test.[33mSimpleTest[0m.[31mrunInBrowser[0m failed: java.lang.[31mIndexOutOfBoundsException[0m: Index: 0, Size: 0[0m
+[0m[[31merror[0m] [0m    at java.util.ArrayList.rangeCheck(Unknown Source)[0m
+[0m[[31merror[0m] [0m    at java.util.ArrayList.get(Unknown Source)[0m
+[0m[[31merror[0m] [0m    at com.google.common.collect.Lists$TransformingRandomAccessList.get(Lists.java:575)[0m
+[0m[[31merror[0m] [0m    at test.SimpleTest$1.invoke([35mSimpleTest.java[0m:[33m20[0m)[0m
+[0m[[31merror[0m] [0m    at test.SimpleTest$1.invoke([35mSimpleTest.java[0m:[33m17[0m)[0m
+[0m[[31merror[0m] [0m    at play.test.Helpers.running(Helpers.java:433)[0m
+[0m[[31merror[0m] [0m    at test.SimpleTest.runInBrowser([35mSimpleTest.java[0m:[33m17[0m)[0m
+[0m[[31merror[0m] [0m    ...[0m
+[0m[[0mdebug[0m] [0mTest test.[33mSimpleTest[0m.[36mrunInBrowser[0m finished[0m
+[0m[[0mdebug[0m] [0m[34mTest run finished: [0m[31m1 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 49.265s[0m[0m
+[0m[[0mdebug[0m] [0mFramework implementation 'org.specs2.runner.Specs2Framework' not present.[0m
+[0m[[0mdebug[0m] [0mSummary for JUnit not available.[0m
+[0m[[0mdebug[0m] [0mSummary for specs2 not available.[0m
+[0m[[31merror[0m] [0mFailed: Total 1, Failed 1, Errors 0, Passed 0[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	test.SimpleTest[0m
+[0m[[31merror[0m] [0m(test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

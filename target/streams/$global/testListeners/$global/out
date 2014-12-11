@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0mtest.SimpleTest[0m
+[0m[[0minfo[0m] [0mx runInBrowser[0m
+[0m[[31merror[0m] [0msbt.ForkMain$ForkError: Index: 0, Size: 0[0m
+[0m[[31merror[0m] [0m    at java.util.ArrayList.rangeCheck(Unknown Source)[0m
+[0m[[31merror[0m] [0m    at java.util.ArrayList.get(Unknown Source)[0m
+[0m[[31merror[0m] [0m    at com.google.common.collect.Lists$TransformingRandomAccessList.get(Lists.java:575)[0m
+[0m[[31merror[0m] [0m    at test.SimpleTest$1.invoke(SimpleTest.java:20)[0m
+[0m[[31merror[0m] [0m    at test.SimpleTest$1.invoke(SimpleTest.java:17)[0m
+[0m[[31merror[0m] [0m    at play.test.Helpers.running(Helpers.java:433)[0m
+[0m[[31merror[0m] [0m    at test.SimpleTest.runInBrowser(SimpleTest.java:17)[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mTotal for test test.SimpleTest[0m
+[0m[[0minfo[0m] [0mFinished in 0.058 seconds[0m
+[0m[[0minfo[0m] [0m1 tests, 1 failures, 0 errors[0m

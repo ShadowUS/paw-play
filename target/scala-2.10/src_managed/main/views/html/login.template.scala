@@ -32,39 +32,46 @@ Seq[Any](format.raw/*1.33*/("""
     <head>
         <title>login</title>
         <link rel="shortcut icon" type="image/png" href=""""),_display_(Seq[Any](/*6.59*/routes/*6.65*/.Assets.at("images/favicon.png"))),format.raw/*6.97*/("""">
-        <link rel="stylesheet" type="text/css" media="screen" href=""""),_display_(Seq[Any](/*7.70*/routes/*7.76*/.Assets.at("stylesheets/login.css"))),format.raw/*7.111*/("""">
+	    <link rel="stylesheet" type="text/css" media="screen" href=""""),_display_(Seq[Any](/*7.67*/routes/*7.73*/.Assets.at("stylesheets/bootstrap.min.css"))),format.raw/*7.116*/("""">
+    	<link rel="stylesheet" type="text/css" media="screen" href=""""),_display_(Seq[Any](/*8.67*/routes/*8.73*/.Assets.at("stylesheets/signin.css"))),format.raw/*8.109*/("""">
+    	<script type='text/javascript' src=""""),_display_(Seq[Any](/*9.43*/routes/*9.49*/.Assets.at("javascripts/bootsrap.min.js"))),format.raw/*9.90*/(""""></script>
+   
+    	<script type='text/javascript' src=""""),_display_(Seq[Any](/*11.43*/routes/*11.49*/.Assets.at("javascripts/jquery-1.11.1.min.js"))),format.raw/*11.95*/(""""></script>
     </head>
     <body>
+        <div class="container">
         
-        """),_display_(Seq[Any](/*11.10*/helper/*11.16*/.form(routes.Application.authenticate)/*11.54*/ {_display_(Seq[Any](format.raw/*11.56*/("""
-            
+        """),_display_(Seq[Any](/*16.10*/helper/*16.16*/.form(routes.Application.authenticate)/*16.54*/ {_display_(Seq[Any](format.raw/*16.56*/("""
+            <div class="hero-unit">
+        	
             <h1>Sign in</h1>
-            
-            """),_display_(Seq[Any](/*15.14*/if(form.hasGlobalErrors)/*15.38*/ {_display_(Seq[Any](format.raw/*15.40*/(""" 
+			</div>            
+            """),_display_(Seq[Any](/*21.14*/if(form.hasGlobalErrors)/*21.38*/ {_display_(Seq[Any](format.raw/*21.40*/(""" 
                 <p class="error">
-                    """),_display_(Seq[Any](/*17.22*/form/*17.26*/.globalError.message)),format.raw/*17.46*/("""
-                </p>
-            """)))})),format.raw/*19.14*/("""
-            
-            """),_display_(Seq[Any](/*21.14*/if(flash.contains("success"))/*21.43*/ {_display_(Seq[Any](format.raw/*21.45*/("""
-                <p class="success">
-                    """),_display_(Seq[Any](/*23.22*/flash/*23.27*/.get("success"))),format.raw/*23.42*/("""
+                    """),_display_(Seq[Any](/*23.22*/form/*23.26*/.globalError.message)),format.raw/*23.46*/("""
                 </p>
             """)))})),format.raw/*25.14*/("""
             
+            """),_display_(Seq[Any](/*27.14*/if(flash.contains("success"))/*27.43*/ {_display_(Seq[Any](format.raw/*27.45*/("""
+                <p class="success">
+                    """),_display_(Seq[Any](/*29.22*/flash/*29.27*/.get("success"))),format.raw/*29.42*/("""
+                </p>
+            """)))})),format.raw/*31.14*/("""
+             <form class="form-signin">
             <p>
-                <input type="email" name="email" placeholder="Email" value=""""),_display_(Seq[Any](/*28.78*/form("email")/*28.91*/.value)),format.raw/*28.97*/("""">
+             	<input type="email" class="form-control" id="inputEmail"  name="email" placeholder="Email" value=""""),_display_(Seq[Any](/*34.114*/form("email")/*34.127*/.value)),format.raw/*34.133*/("""">
             </p>
             <p>
-                <input type="password" name="password" placeholder="Password">
+                <input type="password" class="form-control" name="password" placeholder="Password">
             </p>
             <p>
-                <button type="submit">Login</button>
+                
+                <button class="btn btn-primary btn-large" type="submit">Login</button>
             </p>
-            
-        """)))})),format.raw/*37.10*/("""
+            </form>
+        """)))})),format.raw/*44.10*/("""
         
-            
+	</div>            
     </body>
 </html>
     
@@ -82,11 +89,11 @@ Seq[Any](format.raw/*1.33*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Dec 04 16:54:50 CET 2014
+                    DATE: Thu Dec 11 00:52:13 CET 2014
                     SOURCE: C:/playy/trello/app/views/login.scala.html
-                    HASH: 1f6f1459530e9cc6611dc213549eab521d649c4a
-                    MATRIX: 791->1|916->32|1058->139|1072->145|1125->177|1232->249|1246->255|1303->290|1383->334|1398->340|1445->378|1485->380|1590->449|1623->473|1663->475|1756->532|1769->536|1811->556|1878->591|1941->618|1979->647|2019->649|2113->707|2127->712|2164->727|2231->762|2374->869|2396->882|2424->888|2696->1128
-                    LINES: 26->1|29->1|34->6|34->6|34->6|35->7|35->7|35->7|39->11|39->11|39->11|39->11|43->15|43->15|43->15|45->17|45->17|45->17|47->19|49->21|49->21|49->21|51->23|51->23|51->23|53->25|56->28|56->28|56->28|65->37
+                    HASH: 746ef8bbb17ef366bab694378bb49943d9c9101a
+                    MATRIX: 791->1|916->32|1058->139|1072->145|1125->177|1229->246|1243->252|1308->295|1412->364|1426->370|1484->406|1564->451|1578->457|1640->498|1734->556|1749->562|1817->608|1938->693|1953->699|2000->737|2040->739|2187->850|2220->874|2260->876|2353->933|2366->937|2408->957|2475->992|2538->1019|2576->1048|2616->1050|2710->1108|2724->1113|2761->1128|2828->1163|3035->1333|3058->1346|3087->1352|3438->1671
+                    LINES: 26->1|29->1|34->6|34->6|34->6|35->7|35->7|35->7|36->8|36->8|36->8|37->9|37->9|37->9|39->11|39->11|39->11|44->16|44->16|44->16|44->16|49->21|49->21|49->21|51->23|51->23|51->23|53->25|55->27|55->27|55->27|57->29|57->29|57->29|59->31|62->34|62->34|62->34|72->44
                     -- GENERATED --
                 */
             

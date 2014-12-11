@@ -33,7 +33,7 @@ Seq[Any](format.raw/*1.39*/("""
     """),_display_(Seq[Any](/*5.6*/tasks/*5.11*/.groupBy(_.folder).map/*5.33*/ {/*6.9*/case (folder, tasks) =>/*6.32*/ {_display_(Seq[Any](format.raw/*6.34*/("""
             """),_display_(Seq[Any](/*7.14*/views/*7.19*/.html.tasks.folder(folder, tasks))),format.raw/*7.52*/("""
         """)))}})),format.raw/*9.6*/("""
-    <a href="#newFolder" class="new newFolder">add a list</a>
+    <a href="#newFolder" class="btn btn-primary btn-large new newFolder">add a list</a>
 </article>
 
 """))}
@@ -48,9 +48,9 @@ Seq[Any](format.raw/*1.39*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Dec 04 16:54:50 CET 2014
+                    DATE: Thu Dec 11 03:07:22 CET 2014
                     SOURCE: C:/playy/trello/app/views/tasks/index.scala.html
-                    HASH: 005ffcf2237e4852985a8f878753d3a3d968621f
+                    HASH: 58616e11916b366ce82132ea4d9e9a5db90f8b86
                     MATRIX: 792->1|923->38|1001->82|1014->87|1044->109|1053->120|1084->143|1123->145|1172->159|1185->164|1239->197|1280->213
                     LINES: 26->1|29->1|33->5|33->5|33->5|33->6|33->6|33->6|34->7|34->7|34->7|35->9
                     -- GENERATED --

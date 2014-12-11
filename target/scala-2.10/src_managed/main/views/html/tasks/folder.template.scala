@@ -34,8 +34,8 @@ Seq[Any](format.raw/*1.37*/("""
         <dl class="options">
             <dt>Options</dt>
             <dd>
-            <a class="deleteAllTasks" href="#">Remove all tasks</a>
-                <a class="deleteFolder" href="#">Delete folder</a>
+            <a class="deleteAllTasks btn btn-primary btn-large" href="#">Remove all tasks</a>
+                <a class="deleteFolder btn btn-primary btn-large" href="#">Delete folder</a>
             </dd>
         </dl>
 
@@ -53,7 +53,7 @@ Seq[Any](format.raw/*1.37*/("""
         <div class="assignedTo">
             <input type="text" name="assignedTo" placeholder="Assign to..." />
         </div>
-        <input type="submit" />
+        <input class="btn btn-primary btn-large" type="submit" />
     </form>
 </div>
 
@@ -69,10 +69,10 @@ Seq[Any](format.raw/*1.37*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Dec 04 16:54:50 CET 2014
+                    DATE: Thu Dec 11 03:09:11 CET 2014
                     SOURCE: C:/playy/trello/app/views/tasks/folder.scala.html
-                    HASH: a7ef6fb56200d19e830a02340aada8cddb206b9c
-                    MATRIX: 792->1|921->36|995->75|1022->81|1080->105|1107->111|1437->405|1451->410|1464->414|1512->424|1562->438|1576->443|1622->467|1664->477|1789->566|1817->572
+                    HASH: bb5703a9aa73ec886c765285877e473013ca1d34
+                    MATRIX: 792->1|921->36|995->75|1022->81|1080->105|1107->111|1489->457|1503->462|1516->466|1564->476|1614->490|1628->495|1674->519|1716->529|1841->618|1869->624
                     LINES: 26->1|29->1|31->3|31->3|33->5|33->5|44->16|44->16|44->16|44->16|45->17|45->17|45->17|46->18|49->21|49->21
                     -- GENERATED --
                 */

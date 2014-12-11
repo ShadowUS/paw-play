@@ -2,10 +2,10 @@
 
 <li data-group="@group">
 	
-    <ul>
+    <ul  >
         @projects.map { project =>
             @views.html.projects.item(project)
         }
     </ul>
-    <button class="newProject">New board</button>
+    <button  class="newProject btn btn-primary btn-large" >New board</button>
 </li>

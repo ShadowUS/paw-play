@@ -62,7 +62,7 @@ public class Projects extends Controller {
     /**
      * Delete a project.
      */
-  /*  public static Result delete(Long project) {
+    public static Result delete(Long project) {
         if(Secured.isMemberOf(project)) {
             Project.find.ref(project).delete();
             return ok();
@@ -70,7 +70,7 @@ public class Projects extends Controller {
             return forbidden();
         }
     }
-*/
+
     // -- Project groups
 
     /**

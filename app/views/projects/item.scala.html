@@ -1,5 +1,6 @@
 @(project: Project)
 
 <li data-project="@project.id">
-    <a class="name" href="#@routes.Tasks.index(project.id)">@project.name</a>
+    <a class="name list-group-item btn-default btn" href="#@routes.Tasks.index(project.id)">@project.name</a>
+    
 </li>
